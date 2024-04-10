@@ -12,3 +12,7 @@ timeline
     2018 : ChatGPT
     2024 : Network Pruning & Interpretability
 ```
+
+# Wir im kommenden Semester: 
+![man](https://github.com/pzump/teamprojekt-first-steps/assets/148431873/022cd755-748c-4402-b6b5-ba594d19c5e7)
+
