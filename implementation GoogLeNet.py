@@ -5,9 +5,16 @@ model = torch.hub.load('pytorch/vision:v0.10.0', 'googlenet', pretrained=True)
 model.eval()
 
 
-# Download an example image from the pytorch website
+# Multiple examples to play around with
 import urllib
 url, filename = ("https://github.com/pytorch/hub/raw/master/images/dog.jpg", "dog.jpg")
+# url, filename = ("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Pomeranian.JPG/640px-Pomeranian.jpg", "doggo.jpg")
+# url, filename = ("https://mein.toubiz.de/api/v1/article/f8024aa3-1228-4039-b3c7-9c5c91db86a1/mainImage?format=image/jpeg&width=1900", "hohenstaufen.jpg")
+# url, filename = ("https://variety.com/wp-content/uploads/2021/04/Godzilla-2.jpg?w=1000&h=563&crop=1", "godzilla.jpg")
+# url, filename = ("https://i.redd.it/a3f8536mbhga1.jpg", "spino.jpg")
+# url, filename = ("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/1200px-Flag_of_Barbados.svg.png", "barbados.jpg")
+# url, filename = ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFhunNBlqAWngaW_Ciucth3hbMg5m4tKKCFNTGek_xg&s", "wednesday.jpg")
+# url, filename = ("https://img.welt.de/img/iconist/maenner/mobile184375916/9902504597-ci102l-w1024/Welt-Portrait-Shooting-2016.jpg", "poschardt.jpg")
 try: urllib.URLopener().retrieve(url, filename)
 except: urllib.request.urlretrieve(url, filename)
 
@@ -40,7 +47,6 @@ print(probabilities)
 
 
 # Download ImageNet labels
-!wget https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt
 url = "https://raw.githubusercontent.com/pytorch/hub/master/imagenet_classes.txt"
 response = requests.get(url)
 
