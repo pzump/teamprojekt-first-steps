@@ -15,6 +15,7 @@ url, filename = ("https://github.com/pytorch/hub/raw/master/images/dog.jpg", "do
 # url, filename = ("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flag_of_Barbados.svg/1200px-Flag_of_Barbados.svg.png", "barbados.jpg")
 # url, filename = ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFhunNBlqAWngaW_Ciucth3hbMg5m4tKKCFNTGek_xg&s", "wednesday.jpg")
 # url, filename = ("https://img.welt.de/img/iconist/maenner/mobile184375916/9902504597-ci102l-w1024/Welt-Portrait-Shooting-2016.jpg", "poschardt.jpg")
+url, filename = ("https://www.apple.com/leadership/images/bio/tim-cook_image.png.large_2x.png", "tim_cook.jpg")
 try: urllib.URLopener().retrieve(url, filename)
 except: urllib.request.urlretrieve(url, filename)
 
